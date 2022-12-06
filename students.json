@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "fname": "Bibek",
+        "lname": "Khatri",
+        "DOB": "july 16",
+        "address": "harisisdhi",
+        "phoneNumber": "029928272"
+    },
+    {
+        "id": "2",
+        "fname": "Swastika",
+        "lname": "Bhattarai",
+        "DOB": "April 29",
+        "address": "lokanthali",
+        "phoneNumber": "98078999"
+    },
+    {
+        "id": "3",
+        "fname": "Kapil ",
+        "lname": "Aryal",
+        "DOB": "aug 8",
+        "address": "raniban",
+        "phoneNumber": "096533"
+    }
+]
