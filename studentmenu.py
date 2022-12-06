@@ -91,7 +91,53 @@ while True:
                 # print(d['id'])
                 if id == d['id']:
                     no_id = False
+                    data_s = d
                     print(d)
+                    
+        while True:
+                q = input("Do you want to edit data?y/n \n")
+                
+                if q ==  'y':
+                    
+                    def edit():
+                        table_name = ['1 : fname', '2 : lname', '3 : DOB', '4 : address', '5 : phoneNumber',]
+                        for m in table_name :
+                            print(m)
+                            
+                        numberchoosen = input("What table name you want to edit? choose by number...  \n")
+                    
+                        if numberchoosen == '1':
+                            name = 'fname'
+                            return name
+                        elif numberchoosen == '2':
+                            name = 'lname'
+                            return name
+                        elif numberchoosen == '3':
+                            name = 'DOB'
+                            return name
+                        elif numberchoosen == '4':
+                            name = 'address'
+                            return name
+                        elif numberchoosen == '5':
+                            name = 'phoneNumber'
+                            return name
+                    
+                    update = edit()
+                    updated_value = input("set new value \n")                         
+                    
+                    data_s[update] = updated_value
+                    # print(data_s)
+                    # print(data)
+                    json_object = json.dumps(data)
+                    
+                    with open ('students.json','w+') as file:
+                        file.write(json_object)
+                   
+                    continue
+                    
+                elif q == "n":
+                    break
+      
         if no_id:
             print('not found..')
         
